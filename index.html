@@ -2,35 +2,124 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Encouragement Along The Way</title>
+    <title>Encouragement Along The Way Blog #2</title>
+    
     <style>
-        #container {border: 1px solid purple; border-top: 10px solid purple;}
-        #bible-pic {width:120px}
-        #Introduction {background-color: gray; width:85%; margin:auto; position:absolute; top:40px; }
+        #container {border: 1px solid purple; border-top: 10px solid 					    purple;}
+        #top-header {background-color: purple;font-size:30px;text-align: 					  center;}
+        #bible-pic {width:260px; margin-right:10px;margin-bottom:17px; 						    float:left;}
+        #Introduction {background-color: gray; width:97%; height:23%; 						   padding:6px; margin: 2px 10px 20px 3.5px;
+                       overflow: hidden;}
+     !important: position:absolute; top:5px; right:10px; bottom:10px
+        #Beginning {}
         h2 {font-style: italic;}
-        
+        #blog-articles {margin-top: 15px; padding:6px;font-size:18px}        	a.link {color:blue;}
+        a:hover {color:red;}
+        #grid-body {margin:0;
+        			background:red;
+                    color:white;
+                    display:grid;
+                    grid-template-columns:auto;
+                    grid-template-rows:auto auto auto;
+                    grid-template-areas:
+                    "grid-body"
+                    "footer";
+                   }
+        .container {display:grid;
+        			grid-template-columns:66% auto; 
+                    grid-area:grid-body;
+                    padding:4em 1em;}
+        footer {background-color: tan;
+        		grid-area:footer;
+                }
+        ul {margin:0; 
+        	padding:0;
+            display:grid;
+            grid-template-columns: repeat(3,auto);
+            grid-template-rows: repeat(2,auto);
+            list-style-type:none}
+        ul li {padding:2em; color:red; border:6px;}
+        ul li span {display:block;font-size:1.4em; margin-						bottom:1em; color:white;}
+        #upliftpic {width:150px; justify-self:center;}
+        @media only screen and (max-width:500px){
+        	grid-body {
+            			grid-template-areas:
+                        "footer"
+                        "grid-body";
+        			  }
+            ul, .container{
+            				grid-template-columns:auto;
+                            grid-template-rows:auto;
+                          }
+            .container{
+            			text-align:center;
+                      }
+        }
     </style>
+
 </head>
 <body>
     <div id="container">
-    <div>
-        <img id="bible-pic" src="https://media.istockphoto.com/photos/open-bible-with-a-cup-of-coffee-for-morning-devotion-on-wooden-table-picture-id1165512254?b=1&k=6&m=1165512254&s=170667a&w=0&h=y0kufOOB_IkaGr2qB75Giy_kMzEhgeR7TdK62B2sCVE=" alt="Bible">
-    </div>
+    <header id="top-header">Encouragement Along The Way</header>
+  
     <div id="Introduction">
-    <h1>Engcouragement Along The Way</h1>
-        <p>Welcome to Engcouragement Along The Way. Here you will find various devotions to 
+       
+        <p id="Beginning">
+        <img id="bible-pic" src="https://media.istockphoto.com/photos/open-bible-with-a-cup-of-coffee-for-morning-devotion-on-wooden-table-picture-id1165512254?b=1&k=6&m=1165512254&s=170667a&w=0&h=y0kufOOB_IkaGr2qB75Giy_kMzEhgeR7TdK62B2sCVE=" alt="Bible">
+   
+            Welcome to <em>Encouragement Along The Way</em>. Here you will find various devotions and resources to 
            bring encouragment just when you need it the most. Life can be a roller coaster 
-           of ups and downs. Thankfully God does not leave us to ourselves to handle it 
-           all alone. Click on theof the titles below and see what encouraging word He has 
+           of ups and downs when dealing with not only things in your personal life but also in what's going on in the world around us. Thankfully God does not leave us to ourselves to handle it 
+           alone. Check out the articles below and see what encouraging word He has 
            for you today.   
         </p>
     </div>
-        <ul>
-            <li><a href="When-Victory-Looks1">When Victory Looks Like Defeat...</a></li>
-            <li><a href="Im-Back">I'm Back!</a></li>
+    <div id="blog-articles">    
+    
+        <h3>-Blog Articles</h3>
+        <ul id="article-list">
+            <li class="article-name"><a href="When-Victory-Looks1">When Victory Looks Like Defeat...</a></li>
+            <li class="article-name"><a href="Im-Back">I'm Back!</a></li>
         </ul>
-   
-        <p>Also below are some websites that have devotionals, articles, and other things I have found to be very helpful. </p>
+   </div>
+  <div id="grid-body">
+   <div class="container">
+   	  <div id="content">
+   		<h3>Today's Word of Encouragement</h3>
+        <p>Don't give up just because you messed up.</p>
+      </div>     
+      <img id="upliftpic" src="https://cdn.pixabay.com/photo/2017/01/28/12/20/do-not-give-up-								2015253_960_720.jpg" alt="Don't give up picture">
+   </div>
+   <footer>
+   	  <ul>
+      		<li>
+            	<span>Blog Post 1</span>
+                Read me!
+            </li>
+            <li>
+            	<span>Blog Post 2</span>
+                Read me!
+            </li>
+            <li>
+            	<span>Blog Post 3</span>
+                Read me!
+            </li>
+            <li>
+            	<span>Blog Post 4</span>
+                Read me!
+            </li>
+            <li>
+            	<span>Blog Post 5</span>
+                Read me!
+            </li>
+            <li>
+            	<span>Blog Post 6</span>
+                Read me!
+            </li>   
+      </ul>
+   </footer>
+   </div>
+<p>Also below are some websites that have devotionals, articles, and other things I have found to be very helpful. </p>
         
         <ul>
             <li><a target="_blank" href="http://www.intouch.org">In Touch Ministries</a></li>
